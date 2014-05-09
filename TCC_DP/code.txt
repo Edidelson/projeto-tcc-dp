@@ -1,0 +1,3 @@
+svn checkout: https://projeto-tcc-dp.googlecode.com/svn/trunk/ 
+username: delso23@gmail.com
+senha: QC9aa9fY2YK9

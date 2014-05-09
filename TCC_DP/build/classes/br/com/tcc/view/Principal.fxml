@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" disable="false" focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="778.0" snapToPixel="false" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.tcc.view.PrincipalController">
+  <children>
+    <SplitPane dividerPositions="0.5" focusTraversable="true" layoutX="2.0" layoutY="-2.0" prefHeight="474.0" prefWidth="778.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="474.0" prefWidth="385.0000999999975">
+          <children>
+            <Accordion layoutX="0.0" layoutY="-1.0" prefHeight="474.0" prefWidth="386.0">
+              <expandedPane>
+                <TitledPane fx:id="x2" animated="false" prefHeight="424.0" prefWidth="345.0" text="Cadastro" textAlignment="CENTER">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                      <children>
+                        <Button layoutX="0.0" layoutY="4.0" mnemonicParsing="false" onAction="#vaiParaContasBancarias" opacity="1.0" prefHeight="50.0" prefWidth="382.0" text="Contas Bancárias" />
+                        <Button layoutX="0.0" layoutY="56.0" mnemonicParsing="false" onAction="#vaiParaReceitasDespesas" prefHeight="50.0" prefWidth="382.0" text="Receitas Despesas" />
+                      </children>
+                      <stylesheets>
+                        <URL value="@principal.css" />
+                      </stylesheets>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </expandedPane>
+              <panes>
+                <fx:reference source="x2" />
+                <TitledPane fx:id="x1" animated="false" text="Lançamentos" textAlignment="CENTER">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                      <children>
+                        <Button layoutX="0.0" layoutY="4.0" mnemonicParsing="false" onAction="#vaiParaLancamento" prefHeight="50.0" prefWidth="382.0" text="Lançamentos" />
+                      </children>
+                      <stylesheets>
+                        <URL value="@principal.css" />
+                      </stylesheets>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane alignment="CENTER_LEFT" animated="false" expanded="false" text="Gráficos" textAlignment="CENTER">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                      <children>
+                        <Button layoutX="0.0" layoutY="0.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="382.0" text="Gráficos" />
+                      </children>
+                      <stylesheets>
+                        <URL value="@principal.css" />
+                      </stylesheets>
+                    </AnchorPane>
+                  </content>
+                  <stylesheets>
+                    <URL value="@principal.css" />
+                  </stylesheets>
+                </TitledPane>
+              </panes>
+            </Accordion>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+      </items>
+    </SplitPane>
+  </children>
+  <stylesheets>
+    <URL value="@principal.css" />
+  </stylesheets>
+</AnchorPane>
