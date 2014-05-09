@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="545.0000610351562" prefWidth="971.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.tcc.view.FXMLDocumentController">
+  <children>
+    <Pane layoutX="-10.0" layoutY="1.0" prefHeight="538.0" prefWidth="991.0">
+      <children>
+        <HBox id="HBoxCadastros" alignment="CENTER" fillHeight="false" layoutX="225.0" layoutY="-1.0" prefHeight="545.0000779296824" prefWidth="756.0000999999975" styleClass="hbox">
+          <children>
+            <Pane fx:id="panelFXML" prefHeight="523.0" prefWidth="741.0" styleClass="pane">
+              <stylesheets>
+                <URL value="@teste.css" />
+              </stylesheets>
+              <HBox.margin>
+                <Insets />
+              </HBox.margin>
+            </Pane>
+          </children>
+          <stylesheets>
+            <URL value="@teste.css" />
+          </stylesheets>
+        </HBox>
+        <HBox id="HBoxTitulo" alignment="CENTER_RIGHT" fillHeight="false" layoutX="10.0" layoutY="-1.0" prefHeight="545.000022070315" prefWidth="214.99990000000253" styleClass="hbox">
+          <children>
+            <Pane disable="false" focusTraversable="false" prefHeight="522.0001220703125" prefWidth="211.0" styleClass="pane">
+              <children>
+                <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="0.0" prefHeight="523.0" prefWidth="183.0">
+                  <children>
+                    <Button fx:id="btContasBancarias" mnemonicParsing="false" onAction="#vaiParaContasBancarias" prefHeight="66.00009999999747" prefWidth="219.0" styleClass="buttonGreen" text="Contas Bancárias">
+                        <effect>
+                        <InnerShadow>
+                          <input>
+                            <DropShadow />
+                          </input>
+                        </InnerShadow>
+                      </effect>
+                      <font>
+                        <Font name="Arial" size="14.0" fx:id="x1" />
+                      </font>
+                      <stylesheets>
+                        <URL value="@teste.css" />
+                      </stylesheets>
+                    </Button>
+                    <Button font="$x1" mnemonicParsing="false" prefHeight="65.99990000000253" prefWidth="219.0" styleClass="buttonGreen" text="Receitas Despesas">
+                      <effect>
+                        <InnerShadow>
+                          <input>
+                            <DropShadow />
+                          </input>
+                        </InnerShadow>
+                      </effect>
+                      <stylesheets>
+                        <URL value="@teste.css" />
+                      </stylesheets>
+                    </Button>
+                    <Button font="$x1" mnemonicParsing="false" prefHeight="66.0" prefWidth="219.0" styleClass="buttonGreen" text="Lançamentos">
+                      <effect>
+                        <InnerShadow>
+                          <input>
+                            <DropShadow />
+                          </input>
+                        </InnerShadow>
+                      </effect>
+                      <stylesheets>
+                        <URL value="@teste.css" />
+                      </stylesheets>
+                    </Button>
+                    <Button font="$x1" mnemonicParsing="false" prefHeight="66.0" prefWidth="219.0" styleClass="buttonGreen" text="Gráficos">
+                      <effect>
+                        <InnerShadow>
+                          <input>
+                            <DropShadow />
+                          </input>
+                        </InnerShadow>
+                      </effect>
+                      <stylesheets>
+                        <URL value="@teste.css" />
+                      </stylesheets>
+                    </Button>
+                  </children>
+                </VBox>
+              </children>
+              <rotationAxis>
+                <Point3D z="1.0" />
+              </rotationAxis>
+              <stylesheets>
+                <URL value="@teste.css" />
+              </stylesheets>
+            </Pane>
+          </children>
+          <stylesheets>
+            <URL value="@teste.css" />
+          </stylesheets>
+        </HBox>
+      </children>
+    </Pane>
+  </children>
+</fx:root>

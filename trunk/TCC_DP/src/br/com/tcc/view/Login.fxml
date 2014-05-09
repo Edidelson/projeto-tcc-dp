@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="472.4588623046875" minWidth="622.9451904296875" prefHeight="472.4588623046875" prefWidth="622.9451904296875" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.tcc.view.LoginController">
+  <children>
+    <Pane layoutX="0.0" layoutY="-1.0" prefHeight="473.0" prefWidth="623.0" styleClass="background">
+      <children>
+        <TextField layoutX="218.0" layoutY="149.0" prefWidth="200.0" />
+        <Label layoutX="220.0" layoutY="132.0" text="Usuário:" />
+        <Label layoutX="220.0" layoutY="178.0" text="Senha:" />
+        <Button layoutX="219.0" layoutY="228.0" mnemonicParsing="false" prefWidth="200.0" text="Login" textAlignment="LEFT" textOverrun="ELLIPSIS" />
+        <PasswordField layoutX="218.0" layoutY="197.0" prefWidth="200.0" />
+      </children>
+      <stylesheets>
+        <URL value="@login.css" />
+      </stylesheets>
+    </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@viewprincipal.css" />
+  </stylesheets>
+</AnchorPane>

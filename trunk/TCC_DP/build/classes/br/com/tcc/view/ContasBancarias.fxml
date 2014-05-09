@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.tcc.view.ContasBancariaController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="463.0" prefWidth="608.0">
+      <children>
+        <TableView id="tabContaBancaria" layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="579.99977792969">
+          <columns>
+            <TableColumn prefWidth="75.0" text="Código" />
+            <TableColumn prefWidth="75.0" text="Tipo" />
+          </columns>
+        </TableView>
+        <TabPane layoutX="14.0" layoutY="248.0" prefHeight="165.0" prefWidth="579.999755859375" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+            <Tab text="Principal">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <Label id="lbCodigo" layoutX="14.0" layoutY="20.0" text="Código:" />
+                    <TextField id="txtCodigo" layoutX="56.0" layoutY="20.0" prefWidth="150.0" />
+                    <Label id="lbTipo" layoutX="14.0" layoutY="51.0" text="Tipo:" />
+                    <ComboBox id="cbTipo" layoutX="56.0" layoutY="49.0" prefHeight="21.0" prefWidth="150.0">
+                      <items>
+                        <FXCollections fx:factory="observableArrayList">
+                          <String fx:value="Item 1" />
+                          <String fx:value="Item 2" />
+                          <String fx:value="Item 3" />
+                        </FXCollections>
+                      </items>
+                    </ComboBox>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+        <Button id="btCancelar" layoutX="528.0" layoutY="413.0" mnemonicParsing="false" text="Cancelar" />
+        <Button id="btOK" layoutX="457.0" layoutY="413.0" mnemonicParsing="false" prefWidth="66.0" text="OK" />
+        <Button layoutX="14.0" layoutY="413.0" mnemonicParsing="false" onAction="#voltaParaPrincipal" prefWidth="66.0" text="Voltar" />
+      </children>
+    </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@contasbancarias.css" />
+  </stylesheets>
+</AnchorPane>
