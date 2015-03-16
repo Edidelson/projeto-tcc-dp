@@ -1,0 +1,1 @@
+Este projeto tem o objetivo de demonstrar os benefícios do JavaFX com o possibilidade de executar o mesmo projeto nos ambientes Desktop e Web.
